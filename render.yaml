@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: proxii-youtube-downloader
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz

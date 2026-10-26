@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Open a YouTube video in the Proxii downloader with a bookmarklet.">
+  <title>Bookmarklet | Proxii YouTube Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html" aria-label="Proxii home">
+      <span class="logo-mark" aria-hidden="true">▶</span>
+      <span>proxii</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="bookmarklet.html" aria-current="page">Bookmarklet</a>
+    </nav>
+  </header>
+
+  <main class="content-container">
+    <section class="content-card">
+      <h1>Bookmarklet</h1>
+      <p class="content-intro">Open a YouTube video in Proxii without copying and pasting its link.</p>
+
+      <ol>
+        <li>Make sure the Proxii backend is running on this computer.</li>
+        <li>Drag the button below to your browser’s bookmarks bar. If dragging is unavailable, right-click it and choose to bookmark the link.</li>
+        <li>When viewing a YouTube video, select the saved bookmark. Proxii opens with that video link filled in.</li>
+      </ol>
+
+      <a
+        class="bookmarklet-link"
+        href="javascript:(()=>{const url=encodeURIComponent(location.href);window.open('http://127.0.0.1:3000/?url='+url,'_blank')})()"
+      >▶ Open in Proxii</a>
+
+      <p class="bookmarklet-note">
+        This bookmarklet sends the current page address to the Proxii site running locally on your computer. It does not start a download automatically; you choose the format and start it from the Home page.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Proxii · Built for learning</p>
+  </footer>
+</body>
+</html>

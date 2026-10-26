@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently asked questions about the Proxii downloader.">
+  <title>FAQ | Proxii YouTube Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html" aria-label="Proxii home">
+      <span class="logo-mark" aria-hidden="true">▶</span>
+      <span>proxii</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="faq.html" aria-current="page">FAQ</a>
+      <a href="bookmarklet.html">Bookmarklet</a>
+    </nav>
+  </header>
+
+  <main class="content-container">
+    <section class="content-card">
+      <h1>Frequently asked questions</h1>
+      <p class="content-intro">A few helpful answers about using the downloader.</p>
+
+      <div class="faq-list">
+        <details>
+          <summary>How do I download a video?</summary>
+          <p>Start the backend, open Home, paste a YouTube video link, choose MP4 or MP3, and select Download.</p>
+        </details>
+        <details>
+          <summary>Why can’t the page connect to the downloader?</summary>
+          <p>The local backend must be running. In PowerShell, change to the project’s <code>backend</code> folder and run <code>npm.cmd start</code>. Keep that terminal open while using the site.</p>
+        </details>
+        <details>
+          <summary>Why does a download fail even though the backend is running?</summary>
+          <p>The backend also requires <code>yt-dlp</code> to be installed and available on your PATH. Some videos may be unavailable or restricted.</p>
+        </details>
+        <details>
+          <summary>What are MP4 and MP3?</summary>
+          <p>MP4 is for video. MP3 extracts audio only. The audio option may require FFmpeg to be installed for conversion.</p>
+        </details>
+        <details>
+          <summary>Is it okay to download any video?</summary>
+          <p>Only download content you own or are authorized to download, and follow the platform’s terms and applicable laws.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Proxii · Built for learning</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple place to prepare media downloads you have permission to make.">
+  <meta name="theme-color" content="#0b0e12">
+  <title>Proxii — A simpler way to download</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html" aria-label="Proxii home">
+      <span class="logo-mark" aria-hidden="true">▶</span>
+      <span>proxii</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="bookmarklet.html">Bookmarklet</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="home-layout">
+      <section class="hero-copy">
+        <p class="eyebrow">Your media, your way</p>
+        <h1>Keep the good stuff<span class="hero-title-accent">.</span></h1>
+        <p class="subtitle">
+          A straightforward way to prepare video and audio downloads you’re
+          authorized to make. No clutter, just the essentials.
+        </p>
+        <div class="hero-points" aria-label="Highlights">
+          <span>Free to use</span>
+          <span>MP4 video</span>
+          <span>MP3 audio</span>
+        </div>
+      </section>
+
+      <section class="download-card" aria-labelledby="download-heading">
+        <div class="card-heading">
+          <span class="card-icon" aria-hidden="true">↓</span>
+          <div>
+            <h2 id="download-heading">Start a download</h2>
+            <p>Paste a YouTube link to get started</p>
+          </div>
+        </div>
+
+        <form id="url-form">
+          <label for="video-url">Video URL</label>
+          <div class="input-group">
+            <input
+              id="video-url"
+              type="url"
+              placeholder="https://youtube.com/watch?v=..."
+              autocomplete="url"
+              required
+            >
+            <button type="submit" id="download-button">Get file <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="format-group">
+            <label for="format">Choose your format</label>
+            <select id="format" name="format">
+              <option value="mp4">MP4 — Video</option>
+              <option value="mp3">MP3 — Audio only</option>
+            </select>
+          </div>
+        </form>
+
+        <button type="button" id="download-again" hidden>Download again</button>
+        <p id="message" role="status" aria-live="polite">Your download will appear here when it’s ready.</p>
+        <p class="notice">Only download content you own or are authorized to download.</p>
+      </section>
+    </div>
+  </main>
+
+  <section class="trust-strip" aria-label="How it works">
+    <div class="trust-item">
+      <span class="trust-number">01</span>
+      <p>Paste a video link</p>
+    </div>
+    <div class="trust-item">
+      <span class="trust-number">02</span>
+      <p>Choose video or audio</p>
+    </div>
+    <div class="trust-item">
+      <span class="trust-number">03</span>
+      <p>Prepare your file</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Proxii <span aria-hidden="true">·</span> Made for learning</p>
+  </footer>
+</body>
+</html>
